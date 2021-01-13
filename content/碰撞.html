@@ -87,6 +87,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -132,4 +133,64 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li><a href='Content.html'>Content</a><ul><li><a href='工程師.html'>工程師</a><li><a href='Pyslvs.html'>Pyslvs</a><li><a href='CoppeliaSim.html'>CoppeliaSim</a><ul><li><a href='影音教學.html'>影音教學</a><li><a href='碰撞.html'>碰撞</a></li></ul><li><a href='網頁建立.html'>網頁建立</a><li><a href='HW1.html'>HW1</a><ul><li><a href='task1.html'>task1</a><li><a href='task2.html'>task2</a></li></ul><li><a href='ssh.html'>ssh</a><li><a href='正版、盜版與版本的影響.html'>正版、盜版與版本的影響</a><li><a href='API.html'>API</a></li></ul><li><a href='Project.html'>Project</a><ul><li><a href='修改.html'>修改</a><ul><li><a href='首次更正.html'>首次更正</a><li><a href='二次更正.html'>二次更正</a></li></ul><li><a href='創建與過程.html'>創建與過程</a><li><a href='成品.html'>成品</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">影音教學 << <a href='影音教學.html'>Previous</a> <a href='網頁建立.html'>Next</a> >> 網頁建立<br /><h1>碰撞</h1>
+<p>當Body is respondable開啟時，物體會開啟碰撞響應<br/>當格子與格子有交集時，則物體會產生碰撞<br/>若兩者沒有交集，則不會碰到</p>
+<p><img alt="" height="598" src="./../images/wSMTKg5.jpg" width="430"/></p>
+<p><img alt="" height="598" src="./../images/S50ujdB.jpg" width="430"/></p>
+<p></p>
+<p>Global respondable mask與 Local <span>respondable mask的差異</span></p>
+<p><span>當物體沒有在同一個父集合下，global respondable mask全部關閉則不與場景中的物件產生碰撞。<br/>主要是因為是Local <span>respondable mask是處理有相互關係物件</span>的碰撞，而Global respondable的碰撞是對於場景的所有objects碰撞的控制。若物件是互相接合的，當產生干涉時可利用Local <span>respondable mask採取空集合的方式消除，並且在global respondable mask開啟的請況下，物體只會取消父集合下互相有關係之物件的碰撞，其餘如球體等等依然可以接觸到，而不會直接穿過!</span><br/><br/></span></p>
+<p>1.的情況為AB有交集，而2.的情況C為D與E的父集合，三者關係為層遞的結構</p>
+<p><span><span><img alt="" height="465" src="./../images/VyX1NaV.jpeg" width="1087"/></span></span></p>
+<p><span><span>此處即常見的父集合形式</span></span></p>
+<p><span><span><img alt="" height="836" src="./../images/BdIk5kv.jpg" width="282"/></span></span></p><br />影音教學 << <a href='影音教學.html'>Previous</a> <a href='網頁建立.html'>Next</a> >> 網頁建立</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
